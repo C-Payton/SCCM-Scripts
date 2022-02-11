@@ -13,8 +13,8 @@ If application is found and the version is greater than or equal to, will report
 * Create SCCM application 
 * Set the Detection Method to "Use a custom script to detect the presence of this deployment type"
 
-<img src="https://github.com/C-Payton/SCCM-Scripts/blob/main/DetectionMethod/Detect_App1.png" width="300" height="280"/>&nbsp;
-<img src="https://github.com/C-Payton/SCCM-Scripts/blob/main/DetectionMethod/Detect_App2.png" width="300" height="280"/>&nbsp;
+<img src="https://github.com/C-Payton/SCCM-Scripts/blob/main/DetectionMethod/Detect_App1.png" width="500" height="465"/>&nbsp;
+<img src="https://github.com/C-Payton/SCCM-Scripts/blob/main/DetectionMethod/Detect_App2.png" width="500" height="465"/>&nbsp;
 
 **Note: when updating application on SCCM, just update your application package and change the InstallerVersion to the new version desired. 
 
