@@ -7,18 +7,16 @@ If application is found and the version is greater than or equal to, will report
 
 * This script is for SCCM - Application - Detection Method
 
-### Installing
+### How to use this code
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Determine the values needed for variables ( InstallerVersion , AppName , AppVendor )
+* Create SCCM application 
+* Set the Detection Method to "Use a custom script to detect the presence of this deployment type"
 
-### Executing program
+<img src="https://github.com/C-Payton/SCCM-Scripts/blob/main/DetectionMethod/Detect_App1.png"/>&nbsp;
+<img src="https://github.com/C-Payton/SCCM-Scripts/blob/main/DetectionMethod/Detect_App2.png"/>&nbsp;
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+*Note: when updating application on SCCM, just update your application package and change the InstallerVersion to the new version desired. 
 
 ## Help
 
@@ -26,8 +24,7 @@ Script should detect any application that stores uninstall information in the ty
  * HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall
  * HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall
 
-If errors are found with DisplayVersion, check that software vendor is not using non 
-
+If errors are found with DisplayVersion, check that software is not using non standard values in their DisplayVersion registry value. 
 
 ## Version History
 
