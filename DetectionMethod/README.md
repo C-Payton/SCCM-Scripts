@@ -3,6 +3,13 @@
 Simple powershell script that will check the install status of an application using the system registry. 
 If application is found and the version is greater than or equal to, will report back as "Installed".
 
+This script is very useful because it gets around the limitations of typical Registry or Windows Installer Detection Rules. 
+Some use cases:
+
+* Users or application can upgrade versions outside of published version on SCCM. 
+* Applications have a unique registry uninstall value on every computer install.
+* Handles both 32 and 64bit applicaions. 
+
 ### Dependencies
 
 * This script is for SCCM - Application - Detection Method
