@@ -1,17 +1,16 @@
 <# .SYNOPSIS 
-    Check for presence of application
+	Check for presence of application
  
 .DESCRIPTION 
 	This is for use with SCCM as an Application custom script "Detection Method".
-    This script will check the install status of an application utilizing the system registry.
+ 	This script will check the install status of an application utilizing the system registry.
 	If application is found and the version is greater than or equal to, will report back as "Installed".
     
 .EXAMPLE 
-    .\Detect_App.ps1
+	.\Detect_App.ps1
      
 .NOTES 
-
-	 Change the Global Variables as needed for each application.
+	Change the Global Variables as needed for each application.
 		$InstallerVersion = is the version of the application you are deploying with SCCM. 
 			- This is compared with the detected Registry value "DisplayVersion" 
 			- Ex. [version]$InstallerVersion = "21.011.20039"
@@ -23,11 +22,11 @@
 			- Ex. $AppVendor = "Adobe Systems Incorporated"
 
 .NOTES 
-    FileName:  Detect_App.ps1
-    Author:    Payton C
-    Created:   6/4/2018
-    Updated:   2/21/2022
-    Version: 1.1.0 
+	FileName:  Detect_App.ps1
+    	Author:    Payton C
+    	Created:   6/4/2018
+	Updated:   2/21/2022
+    	Version: 1.1.0 
 #>
 
 Set-ExecutionPolicy -ExecutionPolicy Bypass
