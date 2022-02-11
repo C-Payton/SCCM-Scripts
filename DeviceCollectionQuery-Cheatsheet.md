@@ -12,3 +12,6 @@ Below are some WQL Queries I have found useful in creating SCCM Device Collectio
 
 ## All Devices that are on a particular IP subnet ( Replace xxx.xxx.xxx with your desired subnet )
 `select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System WHERE SMS_R_System.IPSubnets LIKE "xxx.xxx.xxx.0"`
+
+## All Devices that are in a particular AD OU 
+`select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System where SMS_R_System.SystemOUName = "AD/OU/Computers/Computer Labs/DEPT B123"`
