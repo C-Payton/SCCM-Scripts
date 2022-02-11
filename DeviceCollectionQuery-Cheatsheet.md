@@ -9,3 +9,6 @@ Below are some WQL Queries I have found useful in creating SCCM Device Collectio
 
 ## All Devices that are Desktops and Made by Dell
 `select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_SYSTEM_ENCLOSURE on SMS_G_System_SYSTEM_ENCLOSURE.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceId = SMS_R_System.ResourceId where SMS_G_System_SYSTEM_ENCLOSURE.ChassisTypes in ("3","4","6","7","13","15") and SMS_G_System_COMPUTER_SYSTEM.Manufacturer like "%Dell%"`
+
+## All Devices that are on a particular IP subnet ( Replace xxx.xxx.xxx with your desired subnet )
+`select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System WHERE SMS_R_System.IPSubnets LIKE "xxx.xxx.xxx.0"`
