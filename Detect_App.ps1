@@ -34,9 +34,9 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass
 
 ##Global Variable Declaration
 
-[version]$InstallerVersion = "21.011.20039"
-$AppName = "Adobe Acrobat Reader DC"
-$AppVendor = "Adobe Systems Incorporated"
+[version]$InstallerVersion = ""
+$AppName = ""
+$AppVendor = ""
 
 ##32-Bit Detection
 
