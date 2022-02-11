@@ -25,7 +25,7 @@
 	FileName:  Detect_App.ps1
     	Author:    Payton C
     	Created:   6/4/2018
-	Updated:   2/21/2022
+	Updated:   2/11/2022
     	Version: 1.1.0 
 #>
 
