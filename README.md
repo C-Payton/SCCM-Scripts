@@ -7,6 +7,5 @@ Unless noted, hosted code is targeted to support latest Microsoft Endpoint Confi
 
 ## Code 
 
-* DetectionMethod - Application Detection method script
 * [DetectionMethod](https://github.com/C-Payton/SCCM-Scripts/tree/main/DetectionMethod) - Application Detection method script
 
