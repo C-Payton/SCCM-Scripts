@@ -1,5 +1,5 @@
 # SCCM-Scripts
-Collection of useful Endpoint Configuration Manager (SCCM) scripts
+Collection of useful Endpoint Configuration Manager (SCCM) scripts, tips, and tricks. 
 
 ### Dependencies
 Unless noted, hosted code is targeted to support latest Microsoft Endpoint Configuration Manager.
